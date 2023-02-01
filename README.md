@@ -4,6 +4,8 @@ The carparks (carpark_number) that has highest and lowest available lots current
 
 ## Quickstart
 
+### Deploy using Docker
+
 1. Make sure you have Docker installed.
 2. Clone this repos to your local machine
 
@@ -28,4 +30,21 @@ docker run -it -p 8080:80 -d --name car-park car-park
 ```bash
 # Open your browser at http://localhost to access the app
 docker run -p 80:80 vue_app:production
+```
+
+### Deploy manually
+
+1. Project setup
+```
+npm install
+```
+
+2. Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+3. Compiles and minifies for production
+```
+npm build
 ```
