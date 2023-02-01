@@ -2,6 +2,10 @@
 
 The carparks (carpark_number) that has highest and lowest available lots currently.
 
+## Working Demo
+See [Working Demo](http://vuejs-car-park.s3-website-ap-southeast-1.amazonaws.com/).
+
+
 ## Quickstart
 
 ### Deploy using Docker
