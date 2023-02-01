@@ -32,6 +32,7 @@ docker run -it -p 8080:80 -d --name car-park car-park
 docker run -p 80:80 vue_app:production
 ```
 
+
 ### Deploy manually
 
 1. Project setup
@@ -46,5 +47,5 @@ npm run serve
 
 3. Compiles and minifies for production
 ```
-npm build
+npm run build
 ```
