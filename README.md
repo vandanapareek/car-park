@@ -1,27 +1,31 @@
-# vue-google-maps-example
+# Car Park
 
-## Project setup
-```
-yarn install
-```
+The carparks (carpark_number) that has highest and lowest available lots currently.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Quickstart
 
-### Compiles and minifies for production
-```
-yarn build
+1. Make sure you have Docker installed.
+2. Clone this repos to your local machine
+
+```bash
+git clone https://github.com/vandanapareek/car-park.git
 ```
 
-### Lints and fixes files
+3. Build the image
+
+```bash
+docker build -t car-park .
 ```
-yarn lint
+4. Start a container that serves the development version of the app
+
+```bash
+# Open your browser at http://localhost:8080 to access the app
+docker run -it -p 8080:80 -d --name car-park car-park
 ```
 
-### Working Demo
-See [Working Demo](http://vuejs-vite-s3-bucket.s3-website-ap-southeast-1.amazonaws.com/).
+5. Or test the optimized built with Docker
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```bash
+# Open your browser at http://localhost to access the app
+docker run -p 80:80 vue_app:production
+```
