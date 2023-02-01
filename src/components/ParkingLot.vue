@@ -97,7 +97,7 @@ export default defineComponent({
         big_carpark:{minLot:0, minLotItems:[], maxLot:0, maxLotItems:[]},
         large_carpark:{minLot:0, minLotItems:[], maxLot:0, maxLotItems:[]},
         timer: null,
-        loading: false
+        loading: true
       }
    },
    mounted() {
