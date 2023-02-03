@@ -152,7 +152,7 @@ export default defineComponent({
           obj.minLotItems.push(carparkNum);
         } else if (total < obj.minLot) {
           obj.minLot = total;
-          obj.minLotItems.length = [];
+          obj.minLotItems.length = 0;
           obj.minLotItems.push(carparkNum);
         }
       },
@@ -162,7 +162,7 @@ export default defineComponent({
           obj.maxLotItems.push(carparkNum);
         } else if (total > obj.maxLot) {
           obj.maxLot = total;
-          obj.maxLotItems.length = [];
+          obj.maxLotItems.length = 0;
           obj.maxLotItems.push(carparkNum);
         } 
       },
