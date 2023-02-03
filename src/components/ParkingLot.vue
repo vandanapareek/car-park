@@ -132,13 +132,15 @@ export default defineComponent({
         axios.get("/transport/carpark-availability").then(response => {
             this.items = response.data.items[0].carpark_data;
             this.items.forEach(function(val){
-                var total = 0;
+                var totalLots = 0;
+                var totalAvail = 0;
                 val.carpark_info.forEach(item => {
-                    total += parseInt(item.lots_available);
+                  totalLots += parseInt(item.total_lots);
+                  totalAvail += parseInt(item.lots_available);
                 });
-                let catname = this.getCategory(total);
-                this.setMinLot(this.$data[`${catname}_carpark`],total,val.carpark_number);
-                this.setMaxLot(this.$data[`${catname}_carpark`],total,val.carpark_number);
+                let catname = this.getCategory(totalLots);
+                this.setMinLot(this.$data[`${catname}_carpark`],totalAvail,val.carpark_number);
+                this.setMaxLot(this.$data[`${catname}_carpark`],totalAvail,val.carpark_number);
             }.bind(this));
         }).catch((error) => {
         console.log(error);
