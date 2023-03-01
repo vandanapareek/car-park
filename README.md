@@ -1,7 +1,15 @@
 # Car Park
 
-The carparks (carpark_number) that has highest and lowest available lots currently.
-
+The car park web app that show the following information:
+ - the carparks (carpark_number) that has highest and lowest available lots currently, from each carpark category displaying the available lots
+ - poll the latest data every 60 seconds
+ 
+carpark category* (based on total_lots)
+ - small : less than 100 lots
+ - medium : 100 lots or more, but less than 300 lots
+ - big : 300 lots or more, but less than 400 lots
+ - large : 400 lots or more
+ 
 ## Working Demo
 See [Working Demo](http://vuejs-car-park.s3-website-ap-southeast-1.amazonaws.com/).
 
